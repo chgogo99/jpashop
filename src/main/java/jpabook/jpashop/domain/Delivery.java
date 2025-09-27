@@ -11,7 +11,7 @@ public class Delivery {
     @Column(name = "deliver_id")
     private Long id;
 
-    @OneToOne(mappedBy = "delivery")
+    @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
     private Order order;
 
     @Enumerated(EnumType.STRING)

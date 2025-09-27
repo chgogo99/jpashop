@@ -10,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
+@Table(name = "user")
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")
@@ -20,5 +21,6 @@ public class Member {
     private Address address;
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+
 
 }
