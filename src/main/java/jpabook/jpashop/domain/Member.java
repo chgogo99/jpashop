@@ -10,7 +10,6 @@ import java.util.List;
 
 @Entity
 @Getter @Setter
-@Table(name = "user")
 public class Member {
     @Id @GeneratedValue
     @Column(name = "member_id")
